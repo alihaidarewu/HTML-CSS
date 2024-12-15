@@ -1,0 +1,455 @@
+/* universal design  start */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+li,h1,h2,h3,h4,strong,button,textarea,a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dotted-hr{
+    border: dotted 5px white;
+    border-bottom: none ;
+    width : 40px ;
+}
+
+/* universal design end  */
+
+/* header design start  */
+
+#headerDiv{
+    background-color: #004051;
+    text-align: center;
+    padding: 25px ;
+}
+
+#logo img {
+    height: 35% ;
+    width: 35%
+} 
+
+#headingName{
+    /* visibility: hidden; */
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#navbar a{
+    text-decoration:none ;
+    background-color: #0c6781;
+    width:75%;
+    padding: 10px;
+    margin: 5px ;
+    color: white ;
+    font-size: 1.2rem;
+    border-radius: 10px ;
+}
+
+#navbar a:hover{
+        background-color: rgb(102, 172, 87);
+}
+
+/* header design end  */
+
+/* profile style start */
+
+#profile{
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    margin: 100px 10px 100px 10px ;
+}
+
+#topWeatherImage{
+    position: absolute;
+    height : 80px ;
+    width: 80px;
+    top:10px;
+    left: 20px;
+    transition: 3s;
+}
+
+#bottomWeatherImage{
+    position: absolute;
+    height : 80px ;
+    width: 80px;
+    bottom:10px;
+    right: 20px;
+    transition: 3s;
+}
+
+#topWeatherImage:hover{
+    transform: rotate(360deg);
+}
+
+#bottomWeatherImage:hover{
+    transform: rotate(360deg);
+}
+
+#description h2{
+        font-family: "Lucida Handwriting",cursive;
+}
+
+#description p{
+    opacity: 0.5;
+}
+
+/* profile design end  */
+
+/* aboutMe design start  */
+
+#aboutMe{
+    background-color: cadetblue;
+    padding: 30px ;
+    color:white;
+    text-align: center;
+}
+
+#aboutMePhoto img{
+    height: 150px;
+    width: 150px;
+    border: 5px solid blanchedalmond;
+    border-radius: 50%;
+}
+
+#aboutMe a{
+    text-decoration: none ;
+    color : white ;
+}
+
+#aboutMe a:hover{
+    text-decoration: none ;
+    color : rgb(28, 28, 98) ;
+}
+
+#aboutMe  p{
+    font-size: 1rem;
+}
+
+#downloadCV{
+    padding: 10px;
+    background-color: black ;
+    color :white ;
+    border-radius: 30px ;
+    border: 1px solid black ;
+}
+
+#downloadCV:hover {
+    border: 3px solid white;
+}
+
+#bio{
+    text-align: left;
+}
+
+/* aboutMe design end  */
+
+/* professional card design start */
+
+#cardRowDiv{
+    text-align: center;
+}
+
+#educationCard {
+    text-align: center;
+    background-color: rgb(203, 173, 173);
+    width: 100%;
+    padding : 20px ;
+}
+
+#eduImage img{
+    height: 30%;
+    width: 30%;
+    border:  7px solid white;
+    border-radius: 50%;
+}
+
+#eduTitle{
+    background-color: rgb(105, 54, 54);
+    color :white ;
+    border-radius: 15px ;
+}
+
+#eduDescription{
+    text-align: left;
+    font-size: 1rem;
+}
+
+#eduDescription p{
+    font-size: 0.8rem;
+}
+
+#skillCard {
+    background-color: rgb(162, 232, 208);
+    padding: 20px ;
+}
+
+#skillCardImage img{
+    height: 30%;
+    width: 30%;
+    border:  7px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#skillCardTitle{
+    background-color:rgb(70, 137, 114);
+    color :white ;
+    border-radius: 15px ;
+}
+
+#skillCardDescription{
+    text-align: left;
+}
+
+#skillCardDescription li{
+    list-style-type: none ;
+    margin : 40px 0px ;
+    position: relative;
+}
+
+#skillCardDescription li::before{
+    content: '';
+    position: absolute;
+    top: 20px ;
+    background-color: white;
+    height: 15px;
+    width: 100%;
+    
+    border-radius:1000px ;
+}
+
+#skillCardDescription li::after{
+    content: '';
+    position: absolute;
+    top: 20px ;
+    left:0% ;
+    background-color: rgb(100, 136, 59);
+    height: 15px;
+    width: 0;
+    border-radius:1000px ;
+
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 5s;
+    
+	
+	animation-timing-function:linear ;
+    animation-delay: 1s;
+}
+
+#skillCardDescription li#c::after{
+    animation-name : c ;
+}
+#skillCardDescription li#java::after{
+    animation-name : java ;
+}
+#skillCardDescription li#cSharp::after{
+    animation-name : cSharp;
+}
+#skillCardDescription li#cPlusPlus::after{
+    animation-name : cPlusPlus ;
+}
+#skillCardDescription li#html_css::after{
+    animation-name : html_css ;
+}
+#skillCardDescription li#bootstrap::after{
+    animation-name : bootstrap;
+}
+#skillCardDescription li#mysql::after{
+    animation-name : mysql ;
+}
+#skillCardDescription li#figma::after{
+    animation-name : figma ;
+}
+#skillCardDescription li#ms::after{
+    animation-name : ms ;
+}
+
+@keyframes c {
+    to{
+        width: 95%;
+    }
+}
+
+@keyframes java {
+    to{
+        width: 92%;
+    }
+}
+
+@keyframes cSharp {
+    to{
+        width: 88%;
+    }
+}
+
+@keyframes cPlusPlus {
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes html_css {
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes bootstrap {
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes mysql {
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes figma {
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes ms {
+    to{
+        width: 80%;
+    }
+}
+
+/* professional card design end  */
+
+/* achivement-contact design start  */
+
+#achivement-contact{
+    background-color:rgb(1, 176, 176);
+    color: white;
+    padding: 15px ;
+    text-align: justify;
+    margin: 10px 3px 0px 3px ;
+}
+
+#achivement{
+    padding: 20px ;
+}
+
+#contact{
+    text-align: center;
+    padding: 20px ;
+}
+
+#contact input{
+    height: 30px ;
+    width: 70%;
+    text-align: center;
+    border: none ;
+    border-radius: 5px ;
+}
+
+#contact textarea{
+    height: 100px ;
+    width: 70%;
+    text-align: center;
+    border: none ;
+    border-radius: 5px ;
+    resize: none ;
+}
+
+.btn{
+    background-color  : rgb(54, 42, 42) ;
+    color : white ;
+    border: none ;
+    border-radius: 10px ;
+    margin: 15px 10px ;
+}
+
+.btn:hover{
+    background-color: rgb(95, 91, 91);
+    font-weight: bold;
+}
+
+#moreOption{
+    text-align: center  ;
+}
+
+#moreOption img{
+    height: 50px;
+    width: 50px ;
+    border: none ;
+    border-radius: 45% ;
+}
+
+#moreOption button{
+    border-radius: 45%  ;
+    background-color:rgb(1, 176, 176);
+    border: none ;
+    padding: 30px 15px ;
+    margin: 5px ;
+}
+
+#moreOption button:hover{
+    cursor: pointer ;
+    opacity : 0.9 ;
+}
+
+/* achivement-contact design end  */
+
+/* footer design start  */
+
+#footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px ;
+    margin : 3px ;
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none ;
+    color: white;
+    padding: 10px ;
+    display: block ;
+    font-size: 0.8rem;
+}
+
+#footer a:hover 
+{
+    font-weight: bold ;
+    color: gray ;
+}
+
+#footerRight p{
+    font-size: 0.8rem;
+}
+
+#footerRight span{
+    color:red; 
+    font-size: 1.2rem;
+}
+/* footer design end  */

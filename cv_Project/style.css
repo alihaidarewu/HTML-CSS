@@ -1,0 +1,142 @@
+
+:root{
+	--cvBody : #ABEBC6;
+	--bodyBackground : #EEE ;
+	--headingFontColor : #0E6655 ;	
+}
+
+*{
+	padding : 0 ;
+	margin : 0 ;
+}
+
+body{
+	font-family : roboto, sans-serif ;
+	background-color : var(--bodyBackground) ;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:var(--headingFontColor) ;
+}
+
+#mainContainer{
+	max-width : 1000px ;
+	background-color:var(--cvBody);
+	margin:0 auto ;
+}
+
+#profilePic {
+	width : 120px ;
+	height : 120px ;
+	border-radius : 60px ;
+	padding:7px ;
+}
+
+#leftHeader {
+	float:left;
+}
+#middleHeader{
+	float:left;
+	padding:50px 20px ;
+}
+
+#rightHeader{
+	float:right ;
+	padding:35px ;
+	line-height:25px ;
+}
+
+#rightHeader a{
+	text-decoration:none;
+	color:var(--headingFontColor) ;
+	font-weight:bold ;
+}
+
+#rightHeader a:hover{
+	color:blue ;
+}
+
+.forClear{
+	clear:both;
+}
+
+hr{
+	border-top : 1px solid black ; 
+	
+}
+.boldHr{
+	border:3px solid black;
+	border-bottom:none ;
+}
+
+.leftSide{
+	float:left ;
+	padding:30px ;
+}
+
+#personalInfoDetails {
+	float:right;
+	padding:15px 10px ;
+}
+
+.aboutMeDetails {
+	float:right;
+	width : 459px ;
+	padding:15px ;
+}
+
+#techSkillsDetails {
+	padding:15px ;
+	float:right ;
+	margin-right:260px ;
+}
+
+#educationList div {
+	padding: 10px ;
+}
+
+.rightSide {
+	float : right ;
+}
+
+#edu{
+	float:left ;
+	margin: 25px ;
+}
+
+#educationDetails{
+	margin-right:47px ;
+}
+
+
+#otherSkillDetails{
+	padding:10px;
+	margin-right:263px ;
+}
+
+#otherSkillDetails ul li {
+	font-weight:bold ;
+}
+
+#otherSkillDetails ul li p {
+	font-weight:normal ;
+}
+
+#footer{
+	background-color:gray;
+	text-align:center;
+}
+
+#footer a{
+	text-decoration:none ;
+	color:black ;
+	font-size:20px ;
+}
+
+#footer a:hover {
+	color:blue ;
+}
+
+.boldClass{
+	font-weight:bold ;
+}
