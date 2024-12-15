@@ -1,0 +1,106 @@
+
+/* initial design starts here  */
+
+*{
+	margin:0 ;
+	padding:0 ;
+	box-sizing:border-box ;	
+}
+
+html{
+	scroll-behavier:smooth ;
+}
+
+body{
+	background:linear-gradient(to right,#d5f5e3,#fad7a0)
+}
+
+/* initial design ends here */
+
+/* header desing starts here  */
+
+#navSection #navDiv #nav{
+	display:flex;
+	background-color:white;
+}
+
+#navSection #navDiv #nav #navmenu{
+	margin-left:auto ;
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navheading{
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navmenu ul li{
+	list-style-type:none ;
+	display:inline;
+	padding:10px ;
+}
+
+#navSection #navDiv #nav a{
+	text-decoration:none ;
+	color:black ;
+	padding-bottom:5px ;
+}
+
+#navSection #navDiv #nav #navmenu a:hover{
+	color:blue ;
+	border-bottom:2px solid blue ;
+}
+
+/* header design ends here  */
+
+
+/* aboutme design starts here  */
+
+#aboutmeSection #aboutmeDiv{
+	display:flex ;
+	justify-content:center ;
+	align-items:center;
+	padding:20px ;
+}
+
+#aboutmeDiv #infoDiv{
+	width:45% ;
+	text-align:center;
+	padding:25px ;
+	margin:20px ;
+	background-color:#e6b0aa;	
+	border-radius:15px ;
+}
+
+#aboutmeDiv #educationDiv{
+	width:45% ;
+	text-align:center;
+	padding:15px ;
+	margin:20px ;
+	background-color:#a9dfbf;	
+	border-radius:15px ;
+}
+
+#aboutmeDiv #educationDiv:hover,#infoDiv:hover{
+	box-shadow:3px 3px 3px black ;
+}
+
+#aboutmeDiv #educationDiv .educationElement{
+	text-align:left;
+	margin:20px ;
+}
+
+.icon{
+	padding:10px ;
+	border:5px solid white ;
+	width:120px ;
+	border-radius:50% ;
+	margin:20px auto ;
+}
+
+.icon img{
+	width:90px ;
+}
+
+/* aboutme design ends here  */
+
+

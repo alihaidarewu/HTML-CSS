@@ -1,0 +1,82 @@
+
+/* initial design starts here  */
+
+*{
+	margin:0 ;
+	padding:0 ;
+	box-sizing:border-box ;	
+}
+
+html{
+	scroll-behavier:smooth ;
+}
+
+body{
+	background:linear-gradient(to right,#d5f5e3,#fad7a0)
+}
+
+/* initial design ends here */
+
+/* header desing starts here  */
+
+#navSection #navDiv #nav{
+	display:flex;
+	background-color:white;
+}
+
+#navSection #navDiv #nav #navmenu{
+	margin-left:auto ;
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navheading{
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navmenu ul li{
+	list-style-type:none ;
+	display:inline;
+	padding:10px ;
+}
+
+#navSection #navDiv #nav a{
+	text-decoration:none ;
+	color:black ;
+	padding-bottom:5px ;
+}
+
+#navSection #navDiv #nav #navmenu a:hover{
+	color:blue ;
+	border-bottom:2px solid blue ;
+}
+
+/* header design ends here  */
+
+/* form desing starts here  */
+
+#contactDiv{
+	width:40%;
+	margin:0 auto ;
+}
+
+.form{
+	margin:10px ;
+	padding:10px 
+}
+
+input{
+	width:250px ;
+	height:40px ;
+}
+
+#buttons input{
+	width:180px ;
+	height:40px ;
+	margin:10px ;
+	color:white ;
+	font-weight:bold;
+}
+
+/* form desing ends here  */
+
+

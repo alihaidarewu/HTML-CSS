@@ -1,0 +1,95 @@
+
+/* initial design starts here  */
+
+*{
+	margin:0 ;
+	padding:0 ;
+	box-sizing:border-box ;	
+}
+
+html{
+	scroll-behavier:smooth ;
+}
+
+body{
+	background:linear-gradient(to right,#d5f5e3,#fad7a0)
+}
+
+/* initial design ends here */
+
+/* header desing starts here  */
+
+#navSection #navDiv #nav{
+	display:flex;
+	background-color:white;
+}
+
+#navSection #navDiv #nav #navmenu{
+	margin-left:auto ;
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navheading{
+	padding:10px 20px ;
+}
+
+#navSection #navDiv #nav #navmenu ul li{
+	list-style-type:none ;
+	display:inline;
+	padding:10px ;
+}
+
+#navSection #navDiv #nav a{
+	text-decoration:none ;
+	color:black ;
+	padding-bottom:5px ;
+}
+
+#navSection #navDiv #nav #navmenu a:hover{
+	color:blue ;
+	border-bottom:2px solid blue ;
+}
+
+/* header design ends here  */
+
+
+/* hero section desing starts here  */
+
+#heroDiv{
+	display:flex ;
+	flex-wrap:wrap ;
+	justify-content:center ;
+	align-items:center ;
+	margin-top:100px;
+}
+
+#heroDiv #heroName{
+	flex:30% ;
+	text-align:center ;
+}
+
+#heroDiv #heroName button{
+	background-color:blue ;
+	color:white ;
+	height:30px ;
+	width:120px ;
+	border-radius:30px ;
+	margin:20px ;
+	border:none ;
+}
+
+#heroDiv #heroImage{
+	flex:70% ;
+	text-align:center;
+}
+
+#heroDiv #heroImage img{
+	width : 300px ;
+	border-radius:50% ;
+	border:2px solid #110e72 ;
+}
+
+
+/* hero section design ends here  */
+
+
